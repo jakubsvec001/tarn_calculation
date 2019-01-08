@@ -1,6 +1,7 @@
 import unittest
 import src.tarn as t
 
+
 class TestTarn(unittest.TestCase):
 
     def test_tarn_calc(self):
@@ -16,5 +17,3 @@ class TestTarn(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-
