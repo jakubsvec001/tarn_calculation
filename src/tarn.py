@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def tarn_calc(arr):
     """Calculate the tarns of a histogram of arrays
 
@@ -8,9 +9,44 @@ def tarn_calc(arr):
     each unit along the x axis, determine the maximum units of water that the
     histogram can hold.
 
-    Example:
-    arr1 = 
+    Example 1:
+    arr1 = [2, 1, 1, 1, 2, 1, 1, 4, 1] = 5
+           |
+           |
+    |xxx|xx|
+    |||||||||
+
+    Example 2:
+    arr2 = [1, 3, 4, 3, 2, 1, 5, 4, 7, 2, 1, 3, 5, 7] = 24
+
+            |xxxx|
+            |xxxx|
+          |x|xxxx|
+      |xxx|||xxx||
+     |||xx|||xx|||
+     ||||x||||x|||
+    ||||||||||||||
+
+    Example 3:
+    arr3 = [1, 2, 3, 1] = 0
+      |
+     ||
+    ||||
+
+    Example 4:
+    arr4 = [7, 1, 1, 2, 1, 1, 1, 2, 1] = 5
+    |
+    |
+    |xxx|xx|
+    |||||||||
+
+    Args:
+        arr (list / np.array): list of ints or numpy array of integers or floats.
+
+    Return:
+        float: total tarn area contained
     """
+
     arr = np.array(arr)
     n = len(arr)
     past_max = np.zeros(n)
