@@ -21,7 +21,7 @@ def tarn_calc(arr):
 
             |xxxx|
             |xxxx|
-          |x|xxxx|
+          |x|xxx||
       |xxx|||xxx||
      |||xx|||xx|||
      ||||x||||x|||
