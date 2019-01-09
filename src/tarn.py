@@ -11,6 +11,7 @@ def tarn_calc(arr):
 
     Example 1:
     arr1 = [2, 1, 1, 1, 2, 1, 1, 4, 1] = 5
+    
            |
            |
     |xxx|xx|
@@ -29,19 +30,21 @@ def tarn_calc(arr):
 
     Example 3:
     arr3 = [1, 2, 3, 1] = 0
+    
       |
      ||
     ||||
 
     Example 4:
     arr4 = [7, 1, 1, 2, 1, 1, 1, 2, 1] = 5
+    
     |
     |
     |xxx|xx|
     |||||||||
 
     Args:
-        arr (list / np.array): list of ints or numpy array of integers or floats.
+        arr (list): list of ints or numpy array of integers or floats.
 
     Return:
         float: total tarn area contained
